@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="radarPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="843.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.radarController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="586.0" layoutX="8.0" layoutY="34.0" stroke="#3bff36" strokeType="INSIDE" width="827.0" />
+      <Circle fill="#1f93ff00" layoutX="307.0" layoutY="327.0" radius="287.0" stroke="#37ff00" strokeType="INSIDE" />
+      <Circle fill="#1f93ff00" layoutX="307.0" layoutY="327.0" radius="232.0" stroke="#37ff00" strokeType="INSIDE" />
+      <Circle fill="#1f93ff00" layoutX="307.0" layoutY="327.0" radius="172.0" stroke="#37ff00" strokeType="INSIDE" />
+      <Circle fill="#1f93ff00" layoutX="307.0" layoutY="326.0" radius="111.0" stroke="#37ff00" strokeType="INSIDE" />
+      <Circle fill="#1f93ff00" layoutX="307.0" layoutY="326.0" radius="49.0" stroke="#37ff00" strokeType="INSIDE" />
+      <Circle fill="#37ff00" layoutX="307.0" layoutY="326.0" radius="3.0" stroke="#37ff00" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="568.0" layoutX="604.0" layoutY="43.0" stroke="#3bff36" strokeType="INSIDE" width="222.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="55.0" layoutX="611.0" layoutY="55.0" stroke="#3bff36" strokeType="INSIDE" width="208.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#222222" height="18.0" layoutX="620.0" layoutY="46.0" stroke="#222222" strokeType="INSIDE" width="53.0" />
+      <Label layoutX="623.0" layoutY="46.0" text="Ownship" textFill="#3bff36" />
+      <Label layoutX="616.0" layoutY="60.0" text="GSpeed:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="616.0" layoutY="75.0" text="Course:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="616.0" layoutY="90.0" text="Heading:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="725.0" layoutY="60.0" text="Lat:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="725.0" layoutY="75.0" text="Long:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="669.0" layoutY="60.0" text="5.0" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="669.0" layoutY="75.0" text="44.0" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="669.0" layoutY="90.0" text="44.0" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="764.0" layoutY="60.0" text="0.0" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="764.0" layoutY="75.0" text="0.0" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="696.0" layoutY="60.0" text="kT" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="696.0" layoutY="75.0" text="deg" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="696.0" layoutY="90.0" text="deg" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="798.0" layoutY="60.0" text="nm" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="798.0" layoutY="75.0" text="nm" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="56.0" layoutX="611.0" layoutY="121.0" stroke="#3bff36" strokeType="INSIDE" width="208.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#222222" height="18.0" layoutX="620.0" layoutY="110.0" stroke="#222222" strokeType="INSIDE" width="53.0" />
+      <Label layoutX="623.0" layoutY="113.0" text="Track 00" textFill="#3bff36" />
+      <Label layoutX="616.0" layoutY="126.0" text="Lat:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="616.0" layoutY="141.0" text="Long:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="616.0" layoutY="156.0" text="Heading:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="725.0" layoutY="126.0" text="Range:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="725.0" layoutY="141.0" text="Bearing:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="669.0" layoutY="126.0" text="4.2" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="669.0" layoutY="141.0" text="0.9" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="669.0" layoutY="156.0" text="321" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="764.0" layoutY="126.0" text="4.4" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="764.0" layoutY="141.0" text="321" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="696.0" layoutY="126.0" text="nm" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="696.0" layoutY="141.0" text="nm" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="696.0" layoutY="156.0" text="deg" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="798.0" layoutY="126.0" text="nm" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="798.0" layoutY="141.0" text="deg" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#222222" height="18.0" layoutX="622.0" layoutY="295.0" stroke="#222222" strokeType="INSIDE" width="53.0" />
+      <Label layoutX="725.0" layoutY="156.0" text="Spd:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="764.0" layoutY="156.0" text="3.3" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="798.0" layoutY="156.0" text="kT" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="56.0" layoutX="611.0" layoutY="192.0" stroke="#3bff36" strokeType="INSIDE" width="208.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#222222" height="18.0" layoutX="620.0" layoutY="181.0" stroke="#222222" strokeType="INSIDE" width="53.0" />
+      <Label layoutX="625.0" layoutY="183.0" text="Track 01" textFill="#3bff36" />
+      <Label layoutX="616.0" layoutY="197.0" text="Lat:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="616.0" layoutY="212.0" text="Long:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="616.0" layoutY="227.0" text="Heading:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="725.0" layoutY="197.0" text="Range:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="725.0" layoutY="212.0" text="Bearing:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="669.0" layoutY="197.0" text="-0.8" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="669.0" layoutY="212.0" text="-0.6" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="669.0" layoutY="227.0" text="314" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="764.0" layoutY="197.0" text="0.99" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="764.0" layoutY="212.0" text="314" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="696.0" layoutY="197.0" text="nm" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="696.0" layoutY="212.0" text="nm" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="696.0" layoutY="227.0" text="deg" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="798.0" layoutY="197.0" text="nm" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="798.0" layoutY="212.0" text="deg" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="56.0" layoutX="612.0" layoutY="262.0" stroke="#3bff36" strokeType="INSIDE" width="208.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#222222" height="18.0" layoutX="621.0" layoutY="251.0" stroke="#222222" strokeType="INSIDE" width="53.0" />
+      <Label layoutX="626.0" layoutY="253.0" text="Track 02" textFill="#3bff36" />
+      <Label layoutX="617.0" layoutY="267.0" text="Lat:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="617.0" layoutY="282.0" text="Long:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="617.0" layoutY="297.0" text="Heading:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="726.0" layoutY="267.0" text="Range:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="726.0" layoutY="282.0" text="Bearing:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="670.0" layoutY="267.0" text="2.1" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="670.0" layoutY="282.0" text="2.7" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="670.0" layoutY="297.0" text="109" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="765.0" layoutY="267.0" text="3.3" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="765.0" layoutY="282.0" text="109" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="697.0" layoutY="267.0" text="nm" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="697.0" layoutY="282.0" text="nm" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="697.0" layoutY="297.0" text="deg" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="799.0" layoutY="267.0" text="nm" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="799.0" layoutY="282.0" text="deg" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="56.0" layoutX="612.0" layoutY="334.0" stroke="#3bff36" strokeType="INSIDE" width="208.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#222222" height="18.0" layoutX="621.0" layoutY="323.0" stroke="#222222" strokeType="INSIDE" width="53.0" />
+      <Label layoutX="626.0" layoutY="325.0" text="Track 03" textFill="#3bff36" />
+      <Label layoutX="617.0" layoutY="339.0" text="Lat:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="617.0" layoutY="354.0" text="Long:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="617.0" layoutY="369.0" text="Heading:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="726.0" layoutY="339.0" text="Range:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="726.0" layoutY="354.0" text="Bearing:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="670.0" layoutY="339.0" text="-1.2" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="670.0" layoutY="354.0" text="-2.5" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="670.0" layoutY="369.0" text="053" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="765.0" layoutY="339.0" text="2.7" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="765.0" layoutY="354.0" text="053" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="697.0" layoutY="339.0" text="nm" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="697.0" layoutY="354.0" text="nm" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="697.0" layoutY="369.0" text="deg" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="799.0" layoutY="339.0" text="nm" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="799.0" layoutY="354.0" text="deg" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="725.0" layoutY="227.0" text="Spd:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="764.0" layoutY="227.0" text="7.9" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="798.0" layoutY="227.0" text="kT" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="727.0" layoutY="297.0" text="Spd:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="766.0" layoutY="297.0" text="0.0" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="800.0" layoutY="297.0" text="kT" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="727.0" layoutY="368.0" text="Spd:" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="766.0" layoutY="368.0" text="5.0" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="800.0" layoutY="368.0" text="kT" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5b5b5b00" height="139.0" layoutX="612.0" layoutY="408.0" stroke="#3bff36" strokeType="INSIDE" width="159.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#222222" height="18.0" layoutX="618.0" layoutY="395.0" stroke="#222222" strokeType="INSIDE" width="37.0" />
+      <Label layoutX="622.0" layoutY="400.0" text="Alerts" textFill="#3bff36" />
+      <Label layoutX="618.0" layoutY="415.0" text="[10:03:12] Track 1 - entered Guard Zone" textFill="#3bff36">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <Label layoutX="618.0" layoutY="430.0" text="[10:18:31] Track 3 - Lost" textFill="#3bff36">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <Button layoutX="778.0" layoutY="408.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #222222; -fx-border-color: #3bff36;" text="Clear Alerts" textAlignment="CENTER" textFill="#3bff36" wrapText="true">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Button layoutX="778.0" layoutY="457.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #222222; -fx-border-color: #3bff36;" text="Export Alerts" textAlignment="CENTER" textFill="#3bff36" wrapText="true">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Button layoutX="778.0" layoutY="506.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #222222; -fx-border-color: #3bff36;" text="Alert CTRL" textAlignment="CENTER" textFill="#3bff36" wrapText="true">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Button layoutX="720.0" layoutY="557.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #222222; -fx-border-color: #3bff36;" text="M" textAlignment="CENTER" textFill="#3bff36" wrapText="true" />
+      <Button layoutX="667.0" layoutY="557.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #222222; -fx-border-color: #3bff36;" text="-" textAlignment="CENTER" textFill="#3bff36" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="614.0" layoutY="557.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #222222; -fx-border-color: #3bff36;" text="+" textAlignment="CENTER" textFill="#3bff36" wrapText="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Circle fill="#1f93ff00" layoutX="796.0" layoutY="579.0" radius="13.0" stroke="#ff3838" strokeType="INSIDE" />
+      <Button fx:id="startButton" layoutX="772.0" layoutY="557.0" mnemonicParsing="false" onAction="#startAnimation" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: transparent; -fx-border-color: #3bff36;" text="OFF" textAlignment="CENTER" textFill="#3bff36" wrapText="true">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <MenuBar prefHeight="26.0" prefWidth="843.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Save Scenario" />
+                  <MenuItem mnemonicParsing="false" text="Restart Scenario" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Run CoDRSS" />
+                  <MenuItem mnemonicParsing="false" text="Stop CoDRSS" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Radar">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Chart View" />
+                  <MenuItem mnemonicParsing="false" text="Radar View" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="How To" />
+                  <MenuItem mnemonicParsing="false" text="License" />
+                  <MenuItem mnemonicParsing="false" text="Contact" />
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Circle fill="#1f93ff00" layoutX="637.0" layoutY="581.0" radius="13.0" stroke="#3bff36" strokeType="INSIDE" />
+      <Circle fill="#1f93ff00" layoutX="690.0" layoutY="581.0" radius="13.0" stroke="#3bff36" strokeType="INSIDE" />
+      <Circle fill="#1f93ff00" layoutX="743.0" layoutY="580.0" radius="13.0" stroke="#3bff36" strokeType="INSIDE" />
+      <Line fx:id="radarLine" endX="115.0" endY="-1.0" fill="#00ff33" layoutX="479.0" layoutY="327.0" startX="-171.99996948242188" startY="-1.0" stroke="#00ff51" />
+      <Rectangle fx:id="radarRect" arcHeight="5.0" arcWidth="5.0" height="75.0" layoutX="307.0" layoutY="252.0" stroke="TRANSPARENT" strokeType="INSIDE" width="288.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.05303028858069218" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.23333333432674408" green="1.0" opacity="0.284246563911438" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007680491551459294">
+                     <color>
+                        <Color red="0.23333333432674408" green="1.0" opacity="0.284246563911438" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Ellipse fill="#3bff36" layoutX="430.0" layoutY="474.0" radiusX="8.0" radiusY="3.0" rotate="-21.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Ellipse fill="#3bff36" layoutX="258.0" layoutY="183.0" radiusX="8.0" radiusY="3.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Ellipse fill="#3bff36" layoutX="283.0" layoutY="354.0" radiusX="8.0" radiusY="3.0" rotate="-138.5" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Ellipse fill="#3bff36" layoutX="570.0" layoutY="290.0" radiusX="8.0" radiusY="3.0" rotate="47.9" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Ellipse fill="#3bff36" layoutX="127.0" layoutY="526.0" radiusX="8.0" radiusY="3.0" rotate="14.7" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="23.0" layoutX="246.0" layoutY="171.0" stroke="#3bff36" strokeType="INSIDE" width="23.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="23.0" layoutX="559.0" layoutY="279.0" stroke="#3bff36" strokeType="INSIDE" width="23.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="23.0" layoutX="418.0" layoutY="462.0" stroke="#3bff36" strokeType="INSIDE" width="23.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="23.0" layoutX="272.0" layoutY="342.0" stroke="RED" strokeType="INSIDE" width="23.0" />
+      <Label layoutX="247.0" layoutY="192.0" text="T-03" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="273.0" layoutY="363.0" text="T-01" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="419.0" layoutY="483.0" text="T-02" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="560.0" layoutY="300.0" text="T-00" textFill="#3bff36">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="clockLabel" layoutX="14.0" layoutY="37.0" text="10:54:27" textFill="#3bff36" />
+   </children>
+</AnchorPane>
